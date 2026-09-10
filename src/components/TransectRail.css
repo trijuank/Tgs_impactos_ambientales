@@ -1,0 +1,149 @@
+.rail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--rail-w);
+  background: var(--deep);
+  border-right: 1px solid var(--line-dark);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 60;
+}
+
+@media (min-width: 980px) {
+  .rail {
+    display: flex;
+  }
+  .app-shell {
+    padding-left: var(--rail-w);
+  }
+}
+
+.rail-brand {
+  padding: 22px 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid var(--line-dark);
+  width: 100%;
+}
+
+.rail-brand-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--river-bright);
+  line-height: 1;
+}
+
+.rail-brand-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: rgba(242, 238, 227, 0.5);
+  padding: 6px 0;
+}
+
+.rail-line {
+  list-style: none;
+  margin: 0;
+  padding: 28px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  position: relative;
+}
+
+.rail-line::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 50%;
+  width: 1px;
+  background: var(--line-dark);
+  transform: translateX(-50%);
+}
+
+.rail-stop {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.rail-stop-btn {
+  position: relative;
+  z-index: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  color: rgba(242, 238, 227, 0.55);
+}
+
+.rail-stop-marker {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--deep);
+  border: 1.5px solid rgba(242, 238, 227, 0.4);
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.rail-stop-km {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.rail-stop-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  max-height: 92px;
+  overflow: hidden;
+}
+
+.rail-stop-btn:hover {
+  color: rgba(242, 238, 227, 0.9);
+}
+
+.rail-stop-btn:hover .rail-stop-marker {
+  border-color: var(--river-bright);
+}
+
+.rail-stop.is-active .rail-stop-btn {
+  color: #fff;
+}
+
+.rail-stop.is-active .rail-stop-marker {
+  background: var(--river-bright);
+  border-color: var(--river-bright);
+  transform: scale(1.25);
+}
+
+.rail-foot {
+  padding: 16px 0 20px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: rgba(242, 238, 227, 0.4);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

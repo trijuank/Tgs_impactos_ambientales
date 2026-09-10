@@ -1,0 +1,48 @@
+.references-section {
+  background: var(--paper-2);
+  padding: 88px 0;
+}
+
+.ref-list {
+  margin: 36px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  counter-reset: refs;
+}
+
+.ref-item {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  padding-left: 22px;
+  border-left: 2px solid var(--river);
+  line-height: 1.6;
+}
+
+.ref-item strong {
+  color: var(--ink);
+}
+
+.cite-block {
+  margin-top: 32px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.cite-block h4 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--river);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.cite-block p {
+  line-height: 1.6;
+}

@@ -1,0 +1,52 @@
+.section-heading-km {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+  font-weight: 500;
+}
+
+.section-heading-km span {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--river);
+  background: var(--paper-2);
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+
+.diagram .section-heading-km,
+.model3d .section-heading-km {
+  color: rgba(242, 238, 227, 0.7);
+}
+
+.diagram .section-heading-km span,
+.model3d .section-heading-km span {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--river-bright);
+}
+
+.section-heading h2 {
+  font-size: clamp(25px, 3.4vw, 35px);
+  max-width: 19ch;
+}
+
+.diagram .section-heading h2,
+.model3d .section-heading h2 {
+  color: #fff;
+}
+
+.section-heading-lead {
+  font-size: 16.5px;
+  color: var(--ink-soft);
+  margin-top: 16px;
+  max-width: 62ch;
+  line-height: 1.65;
+}
+
+.diagram .section-heading-lead,
+.model3d .section-heading-lead {
+  color: rgba(242, 238, 227, 0.78);
+}

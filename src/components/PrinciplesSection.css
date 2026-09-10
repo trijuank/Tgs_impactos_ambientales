@@ -1,0 +1,131 @@
+.principles-section {
+  padding: 88px 0;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.filter-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.filter-btn .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.filter-btn.active {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.filter-btn.active .dot {
+  outline: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.principles-table-wrap {
+  margin-top: 28px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+table.principles {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+  background: #fff;
+}
+
+table.principles thead th {
+  text-align: left;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--ink-soft);
+  padding: 14px 18px;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+}
+
+table.principles td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14.5px;
+  vertical-align: top;
+}
+
+table.principles tr:last-child td {
+  border-bottom: none;
+}
+
+table.principles td.num {
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  width: 40px;
+}
+
+table.principles td.name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15.5px;
+  white-space: nowrap;
+}
+
+table.principles td.example {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+table.principles tr {
+  transition: background 0.12s;
+}
+
+table.principles tr:hover {
+  background: var(--paper);
+}
+
+.cat-marker {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+
+.cat-tag {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .cat-tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ink-faint);
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+}

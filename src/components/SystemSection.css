@@ -1,0 +1,84 @@
+.system-section {
+  padding: 88px 0;
+}
+
+.facts-grid {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.fact-card {
+  background: #fff;
+  padding: 24px 26px;
+}
+
+.fact-card h4 {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--river);
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.fact-card p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.elements-title {
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.elements-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 1px;
+  background: var(--paper-3);
+  border: 1px solid var(--paper-3);
+}
+
+.element-card {
+  background: var(--mist, #eef1e9);
+  background: #eef0e6;
+  padding: 19px 20px;
+  border-left: 3px solid var(--ink-faint);
+}
+
+.element-card.role-source {
+  border-left-color: var(--turbid);
+}
+
+.element-card.role-receiver {
+  border-left-color: var(--river);
+}
+
+.element-card h4 {
+  font-size: 15px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.element-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---- Color: boletín de monitoreo hidrológico ---- */
+  --deep: #0a2420;
+  --deep-2: #0f332e;
+  --deep-3: #123a34;
+
+  --river: #1b6e6a;
+  --river-bright: #59b3ac;
+  --river-dim: #2f544f;
+
+  --paper: #f2eee3;
+  --paper-2: #e7e0cc;
+  --paper-3: #ddd3b8;
+
+  --ink: #14211b;
+  --ink-soft: #47564a;
+  --ink-faint: #7c8a7c;
+
+  --silt: #b9793a;
+  --silt-soft: #d9a06a;
+  --turbid: #a83f2a;
+  --algae: #63804a;
+
+  --line: rgba(20, 33, 27, 0.14);
+  --line-strong: rgba(20, 33, 27, 0.28);
+  --line-dark: rgba(242, 238, 227, 0.16);
+  --line-dark-strong: rgba(242, 238, 227, 0.32);
+
+  /* ---- Type ---- */
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* ---- Layout ---- */
+  --rail-w: 64px;
+  --content-max: 760px;
+  --content-max-wide: 1040px;
+  --radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--river);
+  color: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.14;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: 2px solid var(--river-bright);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

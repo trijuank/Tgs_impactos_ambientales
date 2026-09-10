@@ -1,0 +1,41 @@
+.diagram {
+  background: var(--deep);
+  color: var(--paper);
+  padding: 88px 0;
+}
+
+.diagram-frame {
+  margin-top: 46px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--line-dark);
+  border-radius: 6px;
+  padding: 26px;
+}
+
+.diagram-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.legend {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  font-size: 13px;
+  color: rgba(243, 238, 225, 0.65);
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}

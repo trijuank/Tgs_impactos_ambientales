@@ -1,0 +1,22 @@
+.wrap {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.wrap-wide {
+  max-width: var(--content-max-wide);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+@media (max-width: 640px) {
+  .wrap,
+  .wrap-wide {
+    padding: 0 20px;
+  }
+}
+
+.app-shell {
+  min-width: 0;
+}
