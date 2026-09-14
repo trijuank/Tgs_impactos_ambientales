@@ -7,8 +7,7 @@ export function ReferencesSection() {
     <section id="referencias" className="references-section">
       <div className="wrap">
         <SectionHeading km="Km 3.9" label="Fuentes consultadas" title="Tres artículos científicos como base de la investigación">
-          Publicados en revistas indexadas en los últimos años, sirven de sustento a los ejemplos y
-          evidencias usados en la tabla de principios.
+          Publicados en revistas indexadas en los últimos años.
         </SectionHeading>
 
         <ol className="ref-list">

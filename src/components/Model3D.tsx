@@ -50,6 +50,26 @@ export function Model3D() {
           <div ref={containerRef} id="canvas3d-container" />
         </div>
 
+        <div className="model3d-flow" aria-label="Flujo del sistema representado en el modelo">
+          <div className="model3d-flow-stage model3d-flow-inputs">
+            <span className="model3d-flow-kicker">Entradas</span>
+            <strong>Fuentes de vertimiento</strong>
+            <span>Doméstico · industrial · agrícola</span>
+          </div>
+          <span className="model3d-flow-arrow" aria-hidden="true">→</span>
+          <div className="model3d-flow-stage model3d-flow-process">
+            <span className="model3d-flow-kicker">Proceso</span>
+            <strong>Colectores y tratamiento</strong>
+            <span>Una descarga pasa por la planta</span>
+          </div>
+          <span className="model3d-flow-arrow" aria-hidden="true">→</span>
+          <div className="model3d-flow-stage model3d-flow-output">
+            <span className="model3d-flow-kicker">Salida</span>
+            <strong>Río e impactos</strong>
+            <span>Agua alterada · riesgo sanitario</span>
+          </div>
+        </div>
+
         <div className="model3d-controls">
           <div className="model3d-hint">Arrastra para rotar · rueda del mouse para hacer zoom</div>
           <div className="model3d-buttons">
