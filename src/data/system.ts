@@ -52,17 +52,17 @@ export const reflections: ReflectionEntry[] = [
   {
     question: '¿Cuáles principios fueron más difíciles de identificar?',
     title: 'Homeóstasis y equilibrio',
-    body: 'Son los más difíciles de aislar porque no se observan directamente: hay que inferirlos a partir de series de datos de calidad del agua en varios puntos y momentos del año. A diferencia de la frontera o los elementos, que se pueden señalar en un mapa, estos principios dependen de comparar mediciones en el tiempo y de entender procesos biológicos y químicos que ocurren "dentro" del agua.',
+    body: 'Son difíciles de aislar porque representan procesos invisibles en el tiempo. La homeóstasis opera mediante mecanismos reguladores (como la autodepuración) para intentar volver al estado inicial del río; mientras que el equilibrio busca mantener un estado constante, lo cual exige un alto consumo de energía (como la demanda de oxígeno para procesar la carga orgánica). A diferencia de la frontera que es un límite físico,, ambos requieren analizar series temporales de datos.',
   },
   {
     question: '¿Qué impactos ambientales podría generar una perturbación?',
     title: 'Un solo eslabón afecta a toda la cadena',
-    body: 'Si aumenta el vertimiento industrial o falla una planta de tratamiento, disminuye el oxígeno disuelto, mueren macroinvertebrados y peces, se reduce la capacidad de autodepuración del río, y la comunidad ribereña pierde una fuente de agua para consumo, riego o pesca. El efecto no se queda en el punto de vertimiento: viaja aguas abajo y puede alcanzar otros municipios y otras cuencas.',
+    body: 'Por el principio de sinergia, una falla en un componente (como el colapso de una PTAR) altera la totalidad del sistema. Si la contaminación supera la resiliencia del agua, cae el oxígeno disuelto y muere la biota. Además, por la jerarquía del río (donde el tramo urbano es subsistema de una cuenca mayor), la contaminación no se queda en el sitio: viaja aguas abajo generando un impacto acumulativo en otros municipios.',
   },
   {
     question: '¿Cómo ayuda el pensamiento sistémico a comprender estos impactos?',
     title: 'Ver el río como sistema, no como recurso aislado',
-    body: 'El pensamiento sistémico evita explicar el deterioro del río por una sola causa —"la industria" o "las viviendas"— y obliga a mirar la totalidad de la cuenca, sus jerarquías y su multicausalidad. Esto permite diseñar soluciones que actúan sobre varios elementos a la vez (tratamiento, regulación, educación ambiental) en lugar de intervenciones aisladas que no logran restablecer el equilibrio del sistema.',
+    body: 'El principio de totalidad nos impide reducir el problema a un solo culpable, reconociendo la multicausalidad del deterioro (urbanización, industria, agro). Esto permite usar la retroalimentación de los monitoreos para aplicar neguentropía (inversión en control, PTAR y educación) que mantenga la organización del sistema, evitando parches aislados que no resuelven el problema de raíz.',
   },
 ];
 
@@ -81,7 +81,7 @@ export interface InfographicData {
 
 export const infographicData: InfographicData = {
   title: 'Síntesis Visual: Análisis del Río Urbano',
-  src: '../img/ilustracion_sistema.jpg', 
+  src: '/img/ilustracion_sistema.jpg', 
   alt: 'Infografía que muestra la aplicación de los 19 principios de la Teoría General de Sistemas en un río',
   description: 'Un resumen gráfico que mapea las entradas, salidas, principios estructurales, dinámicos y relacionales del ecosistema ribereño.'
 };
