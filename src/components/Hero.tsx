@@ -27,6 +27,14 @@ export function Hero() {
             <dd>Río Cauca a su paso por zona urbana (Popayán, Cauca)</dd>
           </div>
         </dl>
+        <figure className="hero-figure">
+          <img
+            src="/img/ilustracion_sistema.jpg"
+            alt="Vista del río Cauca a su paso por la zona urbana de Popayán"
+            loading="lazy"
+          />
+          <figcaption>Río Cauca a su paso por zona urbana.</figcaption>
+        </figure>
       </div>
 
       <svg className="hero-divider" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">

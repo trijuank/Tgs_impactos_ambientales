@@ -52,7 +52,7 @@ export const reflections: ReflectionEntry[] = [
   {
     question: '¿Cuáles principios fueron más difíciles de identificar?',
     title: 'Homeóstasis y equilibrio',
-    body: 'Son difíciles de aislar porque representan procesos invisibles en el tiempo. La homeóstasis opera mediante mecanismos reguladores (como la autodepuración) para intentar volver al estado inicial del río; mientras que el equilibrio busca mantener un estado constante, lo cual exige un alto consumo de energía (como la demanda de oxígeno para procesar la carga orgánica). A diferencia de la frontera que es un límite físico,, ambos requieren analizar series temporales de datos.',
+    body: 'Son difíciles de aislar porque representan procesos invisibles en el tiempo. La homeóstasis opera mediante mecanismos reguladores (como la autodepuración) para intentar volver al estado inicial del río; mientras que el equilibrio busca mantener un estado constante, lo cual exige un alto consumo de energía (como la demanda de oxígeno para procesar la carga orgánica). A diferencia de la frontera que es un límite físico, ambos requieren analizar series temporales de datos.',
   },
   {
     question: '¿Qué impactos ambientales podría generar una perturbación?',
@@ -71,20 +71,6 @@ export interface Reference {
   year: string;
   text: string;
 }
-
-export interface InfographicData {
-  title: string;
-  src: string;
-  alt: string;
-  description: string;
-}
-
-export const infographicData: InfographicData = {
-  title: 'Síntesis Visual: Análisis del Río Urbano',
-  src: '/img/ilustracion_sistema.jpg', 
-  alt: 'Infografía que muestra la aplicación de los 19 principios de la Teoría General de Sistemas en un río',
-  description: 'Un resumen gráfico que mapea las entradas, salidas, principios estructurales, dinámicos y relacionales del ecosistema ribereño.'
-};
 
 export const references: Reference[] = [
   {
