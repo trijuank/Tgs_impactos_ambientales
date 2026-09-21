@@ -6,23 +6,19 @@ export interface SystemFact {
 export const systemFacts: SystemFact[] = [
   {
     label: 'Frontera del sistema',
-    detail:
-      'El tramo del río comprendido entre el punto donde ingresan los primeros vertimientos urbanos y el punto donde el río sale del casco urbano, generalmente delimitado por dos estaciones de monitoreo.',
+    detail: 'Delimita el sistema y permite identificar lo que pertenece y no pertenece a él. Comprende el tramo del río delimitado entre el primer vertimiento urbano y su salida del casco urbano.',
   },
   {
-    label: 'Entorno inmediato',
-    detail:
-      'El régimen de lluvias y sequía, el crecimiento de la población ribereña, la actividad industrial y agrícola de la cuenca, y la normatividad ambiental vigente sobre vertimientos.',
+    label: 'Entorno (Ambiente)',
+    detail: 'Es el área de condiciones y sucesos que influyen en el comportamiento del sistema. Incluye el clima, la actividad socioeconómica ribereña y la normatividad ambiental.',
   },
   {
     label: 'Entradas',
-    detail:
-      'Agua residual doméstica (aguas negras), efluentes industriales, escorrentía agrícola con fertilizantes y plaguicidas, y el caudal natural del propio río.',
+    detail: 'Son los recursos o flujos que ingresan. En este caso: aguas residuales domésticas, industriales, escorrentía agrícola y el caudal natural del propio río.',
   },
   {
     label: 'Salidas',
-    detail:
-      'Agua superficial con su carga contaminante alterada, sedimentos, pérdida de biodiversidad bentónica, riesgo sanitario aguas abajo e indicadores de calidad del agua (ICA, BMWP).',
+    detail: 'Representan el producto del sistema. Incluyen el agua con carga contaminante alterada, sedimentos y los indicadores de calidad que luego pueden retornar como retroalimentación.',
   },
 ];
 
@@ -75,6 +71,20 @@ export interface Reference {
   year: string;
   text: string;
 }
+
+export interface InfographicData {
+  title: string;
+  src: string;
+  alt: string;
+  description: string;
+}
+
+export const infographicData: InfographicData = {
+  title: 'Síntesis Visual: Análisis del Río Urbano',
+  src: '../img/ilustracion_sistema.jpg', 
+  alt: 'Infografía que muestra la aplicación de los 19 principios de la Teoría General de Sistemas en un río',
+  description: 'Un resumen gráfico que mapea las entradas, salidas, principios estructurales, dinámicos y relacionales del ecosistema ribereño.'
+};
 
 export const references: Reference[] = [
   {
